@@ -16,7 +16,7 @@ DFMs are closed under compliment meaning given a machine that accepts all member
 
 The following is an example of a determinsitic finite machine that accepts strings in the alphabet {0,1} that are divisible by 3:
 
-<img src="DFM-divisible-by-3.png" />
+<img src="assets/DFM-divisible-by-3.png" />
 
 The DFM contains a starting state indicated by the arrow with no label. The starting state indicates what state to start in when testing a string's acceptance by the machine.
 Every state has transitions to states for each element in the alphabet.
@@ -26,7 +26,12 @@ The DFM is deterministic because there is not a state that transitions to two di
 In order for a string to be accepted by this machine there must be exactly one set of transitions such that the last transition is to the final state.
 
 
+DFMs are closed under compliment meaning to derive a machine that does not accept binary strings divisible by 3, one could make every final state a non-final state and all non-final states final.
+
+
 ## Nondeterministic Finite Machine
+
+
 
 
 ##Regex
