@@ -4,12 +4,32 @@
   "description": "An introduction to finite state machines (fsm).",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "NODE_ENV=test mocha ./src"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "finite state machine",
+    "deterministic finite machine",
+    "non-deterministic state machine",
+    "regex"
+  ],
+  "author": "walkerrandolphsmith@gmail.com",
   "license": "ISC",
   "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-core": "^6.7.6",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-stage-0": "^6.3.13",
+    "expect": "^1.16.0",
     "mocha": "^2.4.5"
+  },
+  "babel": {
+    "env": {
+      "test": {
+        "presets": [
+          "stage-0",
+          "es2015"
+        ]
+      }
+    }
   }
 }
