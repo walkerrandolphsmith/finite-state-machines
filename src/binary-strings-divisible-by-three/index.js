@@ -1,2 +1,2 @@
 // isBinaryStringDivisibleByThree
-export default bitstring => bitstring.match(/0*(110*)*(101*(001*)*01)*/);
+export default bitstring => (/^(0*(11)*0*(101*(00)*1*01)*0*(11)*0*)$/).test(bitstring);

@@ -41,11 +41,11 @@ describe('isBinaryStringDivisibleByThree', () => {
     });
     describe('When determining if the bitstring is a false negative', () => {
       it('should return true when divisible by 3 and false otherwise', () => {
-          for (var i = x; i < y; i++){
+          for (var i = x; i < y; i++) {
             actual = sut(i.toString(2));
             if (i % 3 === 0 && !actual)
               throw new Error(i + ' is disible by 3, but the bitstring ' + i.toString(2) + ' was rejected by the machine')
-          };
+          }
       });
     });
   });
@@ -59,11 +59,11 @@ describe('isBinaryStringDivisibleByThree', () => {
     });
     describe('When determining if the bitstring is a false positive', () => {
       it('should return true when divisible by 3 and false otherwise', () => {
-          for (var i = x; i < y; i++){
+          for (var i = x; i < y; i++) {
             actual = sut(i.toString(2));
             if (i % 3 !== 0 && actual)
               throw new Error(i + ' is not disible by 3, but the bitstring ' + i.toString(2) + ' was accepted by the machine')
-          };
+          }
       });
     });
   });
