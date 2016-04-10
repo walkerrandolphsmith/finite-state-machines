@@ -39,4 +39,10 @@ All FSM can be represented as a regular expression.
 
 The following digram shows a DFM accepts all binary strings that are divisible by 3.
 Then it converts the DFM into a regular expression by systematically eliminating states.
-<img src="assets/dfm-example.png" />
+
+
+<img src="assets/DFM-divisible-by-3.png" />
+
+<img src="assets/DFM-to-regex-step-2.png" />
+
+<img src="assets/DFM-to-regex-step-3.png" />
