@@ -14,6 +14,18 @@ DFMs are closed under compliment meaning given a machine that accepts all member
 
 ## Deterministic Finite Machine
 
+The following is an example of a determinsitic finite machine that accepts strings in the alphabet {0,1} that are divisible by 3:
+
+<img src="DFM-divisible-by-3.png" />
+
+The DFM contains a starting state indicated by the arrow with no label. The starting state indicates what state to start in when testing a string's acceptance by the machine.
+Every state has transitions to states for each element in the alphabet.
+The is a final state, denoted by state with two concentric circles, will be the destination of the last transition of a string that is accepted by the machine.
+
+The DFM is deterministic because there is not a state that transitions to two different states given the same member of the alphabet. However recall any DFM can be converted into a NFM and the reverse.
+In order for a string to be accepted by this machine there must be exactly one set of transitions such that the last transition is to the final state.
+
+
 ## Nondeterministic Finite Machine
 
 
